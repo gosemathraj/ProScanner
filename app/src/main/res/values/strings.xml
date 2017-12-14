@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProScanner</string>
+    <string name="permission_denied_permanently">You have denied permissions permanently.Permissions are required to File upload work properly.To Grant permissions go to Settings</string>
+    <string name="permissionsDeniedMessage">Camera permission is required.</string>
+</resources>

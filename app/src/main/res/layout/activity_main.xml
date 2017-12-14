@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/front_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Front Scan"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="scan"/>
+
+    <Button
+        android:id="@+id/rear_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rear Scan"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/front_scan"
+        android:layout_marginTop="16dp"
+        android:onClick="scan"/>
+
+    <TextView
+        android:id="@+id/scanned_text_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rear_scan"
+        android:text="Scanned Text"
+        android:layout_marginTop="32dp"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/scanned_text_header">
+
+        <TextView
+            android:id="@+id/scanned_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/front_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Front Scan"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="scan"/>
+
+        <Button
+            android:id="@+id/rear_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rear Scan"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/front_scan"
+            android:layout_marginTop="16dp"
+            android:onClick="scan"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#000"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/scanned_text_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scanned Text"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/scanned_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
